@@ -63,5 +63,5 @@ app.whenReady().then(() => {
   ipcMain.handle("connect", wraper(connectPort));
   ipcMain.handle("disconnect", wraper(disconnectPort));
   ipcMain.handle("arduinoCommand", wraper(sendMessage));
-  onPortData(onArduinoMessage);
+  // onPortData(onArduinoMessage);
 });
